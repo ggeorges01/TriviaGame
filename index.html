@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+     <h1>Totally Trivial Trivia!</h1> 
+ <div>  
+<p>Time Remaining:</p>
+</div>  
+<button type="button" id="StartBtn" onclick="intialize()">START</button>
+
+ <form id="FirstCGI">  
+    <P>What was the first full length CGI movie?</P>
+    <input type="radio" name="FirstCGI" value="a Bug's Life">a Bug's Life
+    <input type="radio" name="FirstCGI" value="Monster's Inc.">Monster's Inc.
+    <input type="radio" name="FirstCGI" value="Toy Story">Toy Story
+    <br>
+ </form>
+ <form id="spiceGirl">    
+    <p>Which of these is NOT a name of one of the Spice Girls?</p>
+
+    <input type="radio" name="spiceGirl" value="Sporty Spice">Sporty Spice
+    <input type="radio" name="spiceGirl" value="Fred Spice">Fred Spice
+    <input type="radio" name="spiceGirl" value="Posh Spice">Posh Spice
+    <br> 
+    </form>
+
+    <form id="mostNBAtitles">
+    <p>Which NBA team won the most titles in the 90s?</p>
+    <input type="radio" name="mostNBAtitles" value="New York Knicks">New York Knicks
+    <input type="radio" name="mostNBAtitles" value="Portland Trailblazers">Portland Trailblazers
+    <input type="radio" name="mostNBAtitles" value="Los Angeles Lakers">Los Angeles Lakers
+    <input type="radio" name="mostNBAtitless" value="Chicago Bulls">Chicago Bulls
+    <br> 
+</form>
+
+    <form id="hitSong">
+    <p>Which group released the hit song 'Smells Like Teen Spirit"?</p>
+    <input type="radio" name="hitSong" value="Nirvana">Nirvana
+    <input type="radio" name="hitSong" value="Backstreet Boys">Backstreet Boys
+    <input type="radio" name="hitSong" value="The Offspring">The Offspring
+    <input type="radio" name="hitSong" value="No Doubt">No Doubt
+    <br>
+    </form>
+
+    <form id ="featuredSong">
+    <p>Which popular Disney movie featured the song, "Circle of Life"?</p>
+    <input type="radio" name="featuredSong" value="Aladdin">Aladdin
+    <input type="radio" name="featuredSong" value="Hercules">Hercules
+    <input type="radio" name="featuredSong" value="Mulan">Mulan
+    <input type="radio" name="featuredSong" value="The Lion King">The Lion King
+    <br>
+    </form>
+
+    <form id="themeSong">
+    <p>Finish this song from the Fresh Prince of Bel-Air theme song: "I 
+    whistled for a cab and when it came near, the license plate said..."</p>
+    <input type="radio" name="themeSong" value="Dice">Dice
+    <input type="radio" name="themeSong" value="Miror">Mirror
+    <input type="radio" name="themeSong" value="Fresh">Fresh
+    <input type="radio" name="themeSong" value="Cab">Cab
+    <br>
+    </form>
+
+    <form id="BFF">
+    <p>What was Doug's best friend's name?</p>
+    <input type="radio" name="BFF" value="Skeeter">Skeeter
+    <input type="radio" name="BFF" value="Mark">Mark
+    <input type="radio" name="BFF" value="Zach">Zach
+    <input type="radio" name="BFF" value="Cody">Cody
+    <br>
+    </form> 
+
+    <form id="HSprincipal">
+    <p>What was the name of the High School Principal in Saved By The Bell?</p>
+    <input type="radio" name="HSprincipal" value="Mr. Zhou">Mr. Zhou
+    <input type="radio" name="HSprincipal" value="Mr. Driggers">Mr. Driggers
+    <input type="radio" name="HSprincipal" value="Mr. Belding">Mr. Belding
+    <input type="radio" name="HSprincipal" value="Mr. Page">Mr. Page
+    <br>
+    </form>
+
+    <form>
+    <br>
+    <input id="submitButton" type="submit" value="DONE">
+    </form>
+    <br>
+<div id="status"></div>
+<script src="assets/javascript/app.js"></script>
+<script type="text javascript"></script>
+<script> 
+
+var StartBtn = document.getElementById('StartBtn');
+
+function initialize() {
+  StartBtn.style.display = 'none';
+}
+</script>
+</body>
+</html>
